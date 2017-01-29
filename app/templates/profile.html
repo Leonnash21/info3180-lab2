@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block main %}
+<!Doctype html>
+<html>
+  <head>
+    <title>Info3180-lab2</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/table_style.css">
+  </head>
+  
+  
+  <body>
+      
+      <div class="col-sm-9 main-content">
+          <h1 class="text-center italic wow zoomIn" data-wow-delay="0.3s"></h1>
+          
+          <br>
+          <br>
+          <br>
+          <br>
+          
+    
+    <div id = 'title'>
+        <h1>
+            <strong> 
+            
+                PROFILE
+           
+            </strong>
+        </h1>
+    </div>
+    
+          <br>
+          <br>
+          
+          
+    <div id =' profilePic'>
+     <img src="{{ url_for('static', filename= 'tiger.jpg') }}" width="300" height="200">
+    </div>
+    
+   
+    
+    
+    
+							<div class="table_container">
+							<table>
+								<thead>
+								<tr>
+								
+								<th>Jay Son</th>
+								
+								
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								
+								<td>Today is: {{timvar}} </td>
+								
+								
+							</tr>
+								<tr>
+								
+								<td>Username: Chetah Jinx<br>
+								    ID Number:620058821<br>
+								    Age:22<br>
+								    Gender:Male</td>
+								    
+								    
+								</tr>
+								
+								
+								<tr>
+								    <td>
+								        I am faster than you can ever imagine.
+								        
+								    </td>
+								</tr>
+        
+        <!--<tr>-->
+        <!--  <td>-->
+        <!--  <div id ='timeinfo'>-->
+        <!--  Today is: {{timvar}} -->
+        <!--  </div>-->
+        <!--  </td>-->
+        <!--</tr>-->
+        
+
+        <!--<tr>-->
+        <!--    <td>-->
+        <!--      <div class ='profile'> -->
+        <!--      <p> Username: Chetah Jinx</p>-->
+        <!--      <p> ID Number:620058821</p>-->
+        <!--      <p> Age:22</p>-->
+        <!--      <p> Gender:Male</p>-->
+        <!--      </div>-->
+        <!--      </td>-->
+        <!--      </tr>-->
+              
+              
+              
+              
+        <!--<tr>-->
+        <!--    <td>-->
+        <!--     <div id= 'info'>-->
+        <!--         <marquee scrolldelay='85'>-->
+        <!--         I am faster than you can ever imagine.-->
+        <!--         </marquee>-->
+        <!--     </div>-->
+        <!--  </td>-->
+        <!--</tr>-->
+    
+              
+              
+              </div>
+              </div>
+          </td>
+        </tr>
+        <tbody>
+    </table>
+  </body> 
+      
+  
+
+<html/>
+
+{% endblock %}
