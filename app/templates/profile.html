@@ -6,123 +6,83 @@
   <head>
     <title>Info3180-lab2</title>
     <link rel="stylesheet" type="text/css" href="/static/css/profile.css">
-    <link rel="stylesheet" type="text/css" href="/static/css/table_style.css">
+    
   </head>
+  <br>
   
-  
+
+        <header>
+             <h1 class="page-header">Profile</h1>
+        </header>
+    
   <body>
       
-      <div class="col-sm-9 main-content">
-          <h1 class="text-center italic wow zoomIn" data-wow-delay="0.3s"></h1>
-          
-          <br>
-          <br>
-          <br>
-          <br>
-          
-    
-    <div id = 'title'>
-        <h1>
-            <strong> 
-            
-                PROFILE
-           
-            </strong>
-        </h1>
-    </div>
-    
-          <br>
-          <br>
-          
-          
     <div id =' profilePic'>
-     <img src="{{ url_for('static', filename= 'tiger.jpg') }}" width="300" height="200">
-    </div>
+    <img src="{{ url_for('static', filename= 'tiger.jpg') }}" width="260" height="220">
     
-   
-    
-    
-    
-							<div class="table_container">
-							<table>
-								<thead>
-								<tr>
-								
-								<th>Jay Son</th>
-								
-								
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								
-								<td>Today is: {{timvar}} </td>
-								
-								
-							</tr>
-								<tr>
-								
-								<td>Username: Chetah Jinx<br>
-								    ID Number:620058821<br>
-								    Age:22<br>
-								    Gender:Male</td>
-								    
-								    
-								</tr>
-								
-								
-								<tr>
-								    <td>
-								        I am faster than you can ever imagine.
-								        
-								    </td>
-								</tr>
+     
+    <table id ="profileTableID">
+      <tbody>
         
-        <!--<tr>-->
-        <!--  <td>-->
-        <!--  <div id ='timeinfo'>-->
-        <!--  Today is: {{timvar}} -->
-        <!--  </div>-->
-        <!--  </td>-->
-        <!--</tr>-->
+        <tr>
+           <td>
+              <div id ='name'>
+              <h1> Jay Son</h1>
+              </div>
+          </td>
+        </tr>
+        
+    
+        <tr>
+          <td>
+          <div id ='timeinfo'>
+            <br>
+          Today's date is : {{timvar}} 
+          </div>
+          </td>
+        </tr>
         
 
-        <!--<tr>-->
-        <!--    <td>-->
-        <!--      <div class ='profile'> -->
-        <!--      <p> Username: Chetah Jinx</p>-->
-        <!--      <p> ID Number:620058821</p>-->
-        <!--      <p> Age:22</p>-->
-        <!--      <p> Gender:Male</p>-->
-        <!--      </div>-->
-        <!--      </td>-->
-        <!--      </tr>-->
+        <tr>
+            <td>
+              <div class ='profile'> 
+              <br>
+              <br>
+              <p> Username: Chetah Jinx</p>
+              <p> ID Number:620058821</p>
+              <p>  Age:22</p>
+              <p> Gender:Male</p>
               
-              
-              
-              
-        <!--<tr>-->
-        <!--    <td>-->
-        <!--     <div id= 'info'>-->
-        <!--         <marquee scrolldelay='85'>-->
-        <!--         I am faster than you can ever imagine.-->
-        <!--         </marquee>-->
-        <!--     </div>-->
-        <!--  </td>-->
-        <!--</tr>-->
-    
-              
+            
               
               </div>
-              </div>
+          </td>
+        </tr>
+        
+        <tr>
+          <td>
+          <div id ='timeinfo'>
+            <br>
+          <p><marquee> I am faster than you can ever imagine!</marquee> </p> 
+          </div>
           </td>
         </tr>
         <tbody>
     </table>
+    </div>
+         
+   
+    
+   
   </body> 
       
   
 
-<html/>
+
+ 
+      
+  
+
+</html>
 
 {% endblock %}

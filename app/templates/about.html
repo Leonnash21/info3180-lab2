@@ -1,11 +1,15 @@
 {% extends "base.html" %}
 
 {% block main %}
+<!Doctype html>
+<html>
 
 <link rel="stylesheet" type="text/css" href="/static/css/theme.css">
+<link rel="stylesheet" type="text/css" href="/static/css/profile.css">
 <h1 class="page-header">About</h1>
 
-<p>This webpage is about {{ name }}.</p>
+
+<body>
 
 <div class="container-fluid block-content">
 				<div class="hgroup text-center wow zoomIn" data-wow-delay="0.3s">
@@ -14,8 +18,8 @@
 				</div>
 				<div class="row team style-2">
 					<div class="col-sm-3 wow zoomIn" data-wow-delay="0.3s">
-						<div class="userpic" style="background-image:url(static/tiger.jpg);">
-							<span></span>
+						<div id="userpic" >
+							<img src="{{ url_for('static', filename= 'IMG_0373.JPG') }}" width="200" height="220" class="rotate90">
 						</div>
 						<div class="user-info text-center">
 							<small>Managing Director</small>
@@ -24,11 +28,10 @@
 
 
 						</div>
-						<div class="soc-icons text-center">
-							<a style="color:#005394;" href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
-							<a style="color:#ff054f;" href="#"><i class="fa fa-google-plus-square fa-lg"></i></a>
-							<a style="color:#47aeff;" href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
-							<a style="color:#b50000;" href="#"><i class="fa fa-pinterest-square fa-lg"></i></a>
-						</div>
+						
 					</div>
+				</div>
+			</div>
+			</body>
+			</html>
 {% endblock %}

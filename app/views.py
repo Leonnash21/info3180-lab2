@@ -29,7 +29,7 @@ def profile():
 
 @app.route("/timeinfo/")
 def timeinfo():
-    return time.strftime(" %c")
+    return time.strftime("%a, %d %b %Y")
     
     
 
